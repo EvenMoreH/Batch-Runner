@@ -16,14 +16,12 @@ int main() {
     const char *config = "config.ini";
     FILE *configFile = fopen(config, "r");
     int delay;
-    int windowless;
     fscanf(configFile, "%d", &delay);
 
     if (configFile == NULL) {
         perror("Unable to open file");
         return 1;
     }
-    printf("%d\n", delay);
 
     fclose(configFile);
 
@@ -58,7 +56,7 @@ int main() {
 
     // Run system() function to activate each batch
     for (int i = 0; i < lineCount; i++) {
-        printf("> Executing batch #%d.\n", i + 1);
+        // printf("> Executing batch #%d.\n", i + 1);
         system(lines[i]);
         Sleep(1000);
     }
