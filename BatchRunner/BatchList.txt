@@ -1,2 +1,0 @@
-example1.bat
-example2.bat

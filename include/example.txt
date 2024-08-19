@@ -1,0 +1,11 @@
+start "" "C:\Program Files\Blender Foundation\Blender 3.6\blender.exe"
+timeout /t 20 /nobreak
+taskkill /IM blender.exe /F /T
+
+ipconfig
+
+hostname
+
+ping google.com
+
+ping 8.8.8.8
